@@ -9,7 +9,14 @@ class SplashViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Image.asset(AssetsData.logo),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Image.asset(AssetsData.logo),
+          const SizedBox(height: 5),
+          const Text('Read Free Books'),
+        ],
+      ),
     );
   }
 }
