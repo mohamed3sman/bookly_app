@@ -13,7 +13,9 @@ class HomeViewBody extends StatelessWidget {
       padding: const EdgeInsets.only(left: 15),
       child: CustomScrollView(
         slivers: [
-          const SliverToBoxAdapter(child: CustomAppBar()),
+          const SliverToBoxAdapter(
+            child: CustomAppBar(),
+          ),
           const SliverToBoxAdapter(
             child: Padding(
               padding: EdgeInsets.only(bottom: 30),
@@ -30,7 +32,7 @@ class HomeViewBody extends StatelessWidget {
               itemBuilder: (context, index) {
                 return const Padding(
                   padding: EdgeInsets.only(bottom: 20),
-                  child: BestSellerListViewItem(),
+                  child: BookListViewItem(),
                 );
               },
             ),
