@@ -13,7 +13,10 @@ class BooksDetailsSection extends StatelessWidget {
       children: [
         const Padding(
           padding: EdgeInsets.only(right: 95, left: 100, top: 20),
-          child: CustomBookItem(),
+          child: CustomBookItem(
+            imageUrl:
+                'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png',
+          ),
         ),
         const SizedBox(height: 35),
         const Text(
